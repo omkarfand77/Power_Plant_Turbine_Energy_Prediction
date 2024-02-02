@@ -15,6 +15,7 @@ This is multilinear regression project where prediction is `energy_prediction` w
 ## ***Exploratory Data Analysis***
 
 
+
 ## ***Feature Engineering and Feature Selection***
 
 The features are classified into Dependant and Independant feature
@@ -37,3 +38,4 @@ By using sklearn Linear Regression Model is build For making predictions.
 
 
 ## ***Deployment***
+By using Streamlit Framework we deploythe model on deveopment server
