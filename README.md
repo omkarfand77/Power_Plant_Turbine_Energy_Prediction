@@ -37,5 +37,5 @@ By using sklearn Linear Regression Model is build For making predictions.
 ## ***Model Evaluation***
 
 
-## ***Deployment***
+## ***Deployment*** [app_link](https://gas-steam-turbine-energy-prediction.streamlit.app/)
 By using Streamlit Framework we deploythe model on deveopment server
