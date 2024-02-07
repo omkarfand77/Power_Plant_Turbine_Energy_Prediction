@@ -10,32 +10,37 @@ The Dataset have five Columns.
 4. energy_production
 5. amb_pressure
 
-This is multilinear regression project where prediction is `energy_prediction` which is Dependant feature in this case.
-
 ## ***Exploratory Data Analysis***
 
-
+Performed data exploeartion of features available in energy dataset.
+check for data set shape, null/NaN values, plotted paiplot for checking corelation of features.
+Also Plotted boxplot of each feature for outliers deltection.
+for showing relationship between Dependent i.e. energy prediction and rest of features plotted individually on
+regression plot.
 
 ## ***Feature Engineering and Feature Selection***
 
-The features are classified into Dependant and Independant feature
+PCA is used for reduce dimensionality reduction of data set to overcome overfitting and underfitting.
+Here scaling of data is important beacause units of all features are different and also to fit a standard normal distribution.
+The features are classified into Dependant and Independant features. `energy_prediction` is Dependant feature in this and Independant features are `Temperature`, `r_humidity`, `exhaust_vacuum`, `amb_pressure`
 
 ### ***Train test split***
 
-Dependant and Independant data partioned into train test set for model evaluation purpose
-
-### ***Scalling of Data***
-
+Dependant and Independant data partioned into train test set with test size of 20%. for ease of model evaluation purpose.
 
 ## ***Model Building***
 
-By using sklearn Linear Regression Model is build For making predictions.
-
-## ***Model validation***
-
+Hence objective is to get an specific value as prediction, accordance to supervised regression analysis
+by using Linear Regression, Ensemble technique Random Forest regressor, Decision tree regressor, Ridge & Lasso Regression Models are build For making predictions.
 
 ## ***Model Evaluation***
 
+Model is evaluated on basis of cost function `Mean absolute`, `coeficient of determination` (R2 Score).
+
+## ***Model Selection***
+
+Among all models build in model building on basis of model evaluation coeficient of determination is 0.96 there fore Random Forest regressor model is selected for making real time predictions.
 
 ## ***Deployment*** [app_link](https://gas-steam-turbine-energy-prediction.streamlit.app/)
-By using Streamlit Framework we deploythe model on deveopment server
+
+Using Streamlit Framework model is deployed for real time application.
