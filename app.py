@@ -20,11 +20,12 @@ with st.container():
         st.subheader('Steps Involved', divider='rainbow')
         st.write('''
 
-    1. **Exploratory Data Analysis (EDA) and Preprocessing:** Understand data patterns and clean/preprocess the dataset.
-    2. **Feature Engineering and Selection:** Create new features and select relevant ones. Scale the data and handle dependent/independent features.
-    3. **Model Building:** Utilize the Random Forest Classifier algorithm to construct a predictive model.
-    4. **Model Evaluation:** Achieve a model accuracy of 95%.
-    5. **Deployment:** Deploy the model using the Streamlit framework for real-time application.''')
+    1. **Power Plant Configuration:** Integrated gas turbines, steam turbines, and heat recovery steam generators to generate electricity.
+    2. **Energy Transfer:** Modeled electricity generation through a tandem gas and steam turbine cycle, enabling the transfer of energy between turbines.
+    3. **Feature Engineering and Dimensionality Reduction:** Applied dimensionality reduction techniques to optimize the feature set for better model performance.
+    4. **Model Building:** Constructed a Random Forest Regression model to predict energy output based on exhaust vacuum and ambient variables.
+    5. **Model Evaluation:**  Evaluated the model using cost functions to ensure its effectiveness in optimizing plant performance.
+    6. **Deployment:** Deploy the model using the Streamlit framework for real-time application.''')
         st.subheader('Tools & Librares Used', divider='rainbow')
         st.write('Python, Pandas, Numpy, Scikit-Learn, Malplotlib, Seaborn, Streamlit')
 
